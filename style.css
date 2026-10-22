@@ -1,0 +1,261 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+body {
+    font-family: 'Lilita One', cursive;
+    color: #a91f45;
+    background-color: #fde7ed;
+    background-image: url("fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.8;
+}
+/* ===== ENCABEZADO ===== */
+.encabezado {
+    background-color: rgba(255, 239, 244, 0.95);
+    border-bottom: 3px solid #c9df8a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    padding: 12px 0;
+}
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #b52a50 !important;
+    font-weight: bold;
+}
+.nav-link {
+    color: #a91f45 !important;
+    font-size: 1.1rem;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #718b39 !important;
+}
+.navbar-toggler {
+    border: 2px solid #c9df8a;
+    border-radius: 12px;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(201, 223, 138, 0.5);
+}
+/* ===== INICIO ===== */
+.inicio {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+.contenido-inicio {
+    width: 100%;
+    max-width: 850px;
+    padding: 45px 35px;
+    background-color: rgba(255, 238, 243, 0.88);
+    border: 3px solid #f17ca8;
+    border-radius: 45px;
+    box-shadow: 0 8px 25px rgba(180, 75, 110, 0.12);
+}
+.frase-inicio,
+.etiqueta-seccion {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #718b39;
+    margin-bottom: 10px;
+}
+h1,
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    color: #718b39;
+    text-shadow: 1px 1px 0 #f17ca8;
+}
+h1 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    margin-bottom: 20px;
+}
+.texto-inicio {
+    max-width: 680px;
+    margin: 0 auto 30px;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+.botones-inicio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+/* ===== BOTONES VERDES ===== */
+.boton-verde {
+    display: inline-block;
+    background-color: #c9df8a;
+    color: #3f5129;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 12px 25px;
+    border: 2px solid #a8c36a;
+    border-radius: 30px;
+    box-shadow: 0 4px 0 #a8c36a;
+    transition: all 0.25s ease;
+}
+.boton-verde:hover {
+    background-color: #b5d16f;
+    color: #34451f;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #a8c36a;
+}
+.boton-verde:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #a8c36a;
+}
+/* ===== SECCIONES DE TUTORIALES ===== */
+.seccion-tutorial {
+    padding: 90px 20px;
+    text-align: center;
+}
+.contenedor-contenido {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: rgba(255, 238, 243, 0.92);
+    border: 3px solid #f17ca8;
+    border-radius: 40px;
+    box-shadow: 0 8px 25px rgba(180, 75, 110, 0.12);
+}
+.etiqueta-seccion {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: clamp(2.8rem, 5vw, 4.3rem);
+    margin-bottom: 35px;
+    line-height: 1.35;
+}
+.contenido-pasos {
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+.contenido-pasos p {
+    margin-bottom: 18px;
+}
+.contenido-pasos ul {
+    padding-left: 45px;
+    margin-bottom: 20px;
+}
+.contenido-pasos li {
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.numero {
+    color: #718b39;
+    font-size: 1.4rem;
+}
+.contenido-pasos strong {
+    color: #971b40;
+}
+/* ===== SECCIÓN DE RETIRADA ===== */
+.seccion-retiro {
+    padding-top: 40px;
+}
+.introduccion-retiro {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+/* ===== BOTÓN PARA VOLVER ===== */
+.boton-volver {
+    margin-top: 25px;
+}
+/* ===== PIE DE PÁGINA ===== */
+.pie-pagina {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 239, 244, 0.95);
+    border-top: 3px solid #c9df8a;
+    font-size: 1.1rem;
+}
+.nombre-footer {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #b52a50;
+    margin-bottom: 5px;
+}
+.derechos {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+/* ===== DISEÑO PARA CELULARES ===== */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        line-height: 1.7;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    .inicio {
+        min-height: auto;
+        padding: 45px 15px;
+    }
+    .contenido-inicio {
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+    .frase-inicio,
+    .etiqueta-seccion {
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+    }
+    .texto-inicio {
+        font-size: 1.1rem;
+    }
+    .botones-inicio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boton-verde {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1.05rem;
+    }
+    .seccion-tutorial {
+        padding: 40px 15px;
+    }
+    .contenedor-contenido {
+        padding: 28px 20px;
+        border-radius: 28px;
+    }
+    .contenido-pasos {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+    .contenido-pasos ul {
+        padding-left: 25px;
+    }
+    .introduccion-retiro {
+        font-size: 1.1rem;
+    }
+    .pie-pagina {
+        padding: 30px 15px;
+    }
+} 
